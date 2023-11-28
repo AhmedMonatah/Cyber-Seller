@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/checkout.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="checkout_main">
+        <div class="Billing">
+            <div >
+
+                <h1 style="padding-bottom: 2rem;">Billing Address</h1>
+            </div>
+            <div class="inputs">
+                <input type="text" id="1" placeholder="Enter Your Frist Name"><input type="text" id="2" placeholder="Enter Your Last Name"><input
+                    type="text" id="3" placeholder="Enter Your Email"><input type="text" id="4"
+                    placeholder="Enter Your Address"><input type="text" id="5" placeholder="Enter Your Telephone Number">
+            </div>
+        </div>
+        <div class="order">
+            <div class="h1">
+                <h1 style="text-align: center;">Your Order</h1>
+            </div>
+            <div class="Product">
+
+                <div class="order-summary">
+                    <div class="order-col">
+                        <div><strong>PRODUCT</strong></div>
+                        <div><strong>TOTAL</strong></div>
+                    </div>
+
+                    <div class="order-col">
+                        <div>1x Product Name Goes Here</div>
+                        <div>$980.00</div>
+                    </div>
+                    <div class="order-col">
+                        <div>2x Product Name Goes Here</div>
+                        <div>$980.00</div>
+                    </div>
+                </div>
+                <div class="order-col">
+                    <div>Shiping</div>
+                    <div><strong>FREE</strong></div>
+                </div>
+                <div class="order-col">
+                    <div><strong>TOTAL</strong></div>
+                    <div style="color: red; font-size: 1.6em"><strong class="order-total">$2940.00</strong></div>
+                </div>
+                <div class="payway" style="padding-bottom: 1rem;">
+                    <input type="radio" id="bank" name="payment" value="bank">
+                    <label for="bank">Direct Bank Transfer</label><br>
+                    <inputs type="radio" id="driect" name="payment" value="driect">
+                    <label for="driect">Paiement when recieving</label><br>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Paypal System</label> 
+
+                </div>
+                
+                <div class="chcek" style="padding-bottom: 1rem;">
+                    <input type="checkbox" id="terms" name="terms&condadtions" value="terms">
+                    <label for="terms">I've read and accept the terms & conditions</label><br>
+                </div>
+
+            </div>
+            <div class="submit"><button id="sub" type="submit">Place Order</button></div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+

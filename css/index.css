@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  height: 40px;
+  padding: 0px 20px;
+  margin: 5px;
+  border: 1px solid #E4E7ED;
+  background-color: #FFF;
+  width: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#top-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1E1F29;
+}
+
+.header-links li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+.header-links li:last-child {
+  margin-right: 0px;
+}
+
+.header-links li a {
+  color: #FFF;
+  text-decoration: none;
+
+}
+
+.header-links li a:hover {
+  color: #D10024;
+}
+
+.header-links li i {
+  color: #D10024;
+  margin-right: 5px;
+  
+}
+
+#header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #15161D;
+}
+
+.header-logo {
+  float: left;
+}
+
+.header-logo .logo img {
+  display: block;
+}
+
+.header-search {
+  padding: 15px 0px;
+}
+
+.header-search form {
+  position: relative;
+}
+
+.header-search form .input-select {
+  margin-right: -4px;
+  border-radius: 40px 0px 0px 40px;
+}
+
+.header-search form .input {
+  width: calc(100% - 160px);
+  margin-right: -8px;
+}
+
+.header-search form .search-btn {
+  height: 40px;
+  width: 100px;
+  background: #D10024;
+  color: #FFF;
+  font-weight: 700;
+  border: none;
+  border-radius: 0px 40px 40px 0px;
+}
+
+#navigation {
+  background: #FFF;
+  border-bottom: 2px solid #E4E7ED;
+  border-top: 3px solid #D10024;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+.container {
+  
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.btn {
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  color:rgba(240, 248, 255, 0.23);
+  background-color: #555;
+}
+
+.products {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.product {
+
+  display: inline-block;
+  width: 200px;
+  margin: 0 20px;
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  height: 10%;
+}
+
+.footer .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+
+
+
+.product {
+  width: 20%;
+  height: 30%;
+  margin: 10px;
+}
+
+  ol,
+  ul {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 3rem;
+  width: 100%;
+  padding-top:10px ;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+}
+
+a:hover{
+  color:#D10024;
+ }
+
+
+
+#frame{
+  width: 100%;
+  height: 150vh;
+  
+}
+    /* resposnive headear */
+@media screen and (max-width:851px) {
+  .product {
+    width: 40%;
+    height: 10%;
+    margin: 10px;
+  }
+
+  .header-logo {
+    padding-left: 20%;
+    float: left;
+  }
+}
+
+@media screen and (max-width:667px) {
+  .product {
+    width: 60%;
+    height: 10%;
+    margin: 10px;
+  }
+
+  .imageLogo {
+    padding-top: 2px;
+  }
+
+  .input {
+    margin-left: 30px;
+  }
+
+  .header-logo {
+    padding-left: 35%;
+    float: left;
+  }
+
+  #top-header {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@media screen and (max-width:653px) {
+  .product {
+    width: 60%;
+    height: 10%;
+    margin: 10px;
+  }
+
+  .imageLogo {
+    padding-top: 2px;
+  }
+
+  .input {
+    margin-left: 30px;
+  }
+
+  .header-logo {
+    padding-left: 15%;
+    float: left;
+  }
+}

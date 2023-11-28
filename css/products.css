@@ -1,0 +1,34 @@
+
+.content{
+    margin: 0 auto;
+    padding: 0 5vw;
+}
+.catogeries{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+font-size: x-large;
+}
+
+.catogeries a{
+    text-decoration: none;
+}
+
+.catogeries li::marker{
+    content: "";
+}
+
+
+#all:target #phones,
+#all:target #laptops
+{
+    display: block;
+}
+
+#phones:target{
+    display: none;
+}
+
+#laptops:target{
+    display: none;
+}

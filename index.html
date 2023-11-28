@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Store</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <header>
+    <div id="top-header">
+      <div class="container">
+        <ul class="header-links pull-left">
+        </ul>
+        <ul class="header-links pull-right">
+          <li><a href="signin.html" style="font-size:15px"><i></i> Sign in</a></li>
+          <li><a href="signUp.html"style="font-size:15px" f><i></i> Sign up</a></li>
+                <li><a id="a-home" href="#home" style="font-size: 15px;">Home</a></li>
+                <li><a id="a-checkOut" style="font-size: 15px;"  href="#checkOut">Check Out</a></li>
+                <li><a id="a-products"style="font-size: 15px;" href="#Products">Products</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div id="header">
+      <div class="container">
+        <div class="row">
+            <div class="header-logo">
+              <a href="#" class="logo">
+                <img src="logo-no-background.png" alt="" class="imageLogo" width="210" height="50">
+              </a>
+            </div>
+          </div>
+            <div class="header-search">
+              <form>
+                <input class="input" placeholder="Search here">
+                <button class="search-btn">Search</button>
+              </form>
+            </div>
+          </div>
+            </div>
+
+  </header>
+  <iframe id="frame" src="home.html" frameborder="0" height="50%" width="100%"></iframe>
+  
+    </form>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>123 Main Street,</li>
+              <li>City, State ZIP</li>
+              <li>Phone: (123) 456-7890</li>
+              <li>Email: info@example.com</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>Follow Us</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+  <script>
+
+    const frame = document.getElementById("frame")
+
+
+    const homeLink = document.getElementById("a-home")
+    const checkOut = document.getElementById("a-checkOut")
+    const products = document.getElementById("a-products")
+
+
+    homeLink.addEventListener("click", () => {
+      frame.src = "home.html"
+      frame.style.height = "100vh"
+
+    })
+
+    checkOut.addEventListener("click", () => {
+      frame.src = "checkout.html"
+      frame.style.height = "90vh"
+    })
+    products.addEventListener("click", () => {
+      frame.src = "products.html"
+      frame.style.height = "140vh"
+
+    })
+
+ 
+  </script>
+  </iframe>
+  
+</body>
+
+</html>

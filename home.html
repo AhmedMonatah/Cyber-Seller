@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<style>
+ .video-container {
+  max-width: 850px;
+  margin: 2px auto;
+  text-align: center;
+}
+video {
+  border-radius:10px ;
+
+  width: 100%;
+}
+.controls {
+  margin-top: 10px;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer ul li:before {
+  content: "\2022"; /* Bullet point */
+  color: #fff;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+#playButton,#fullscreenButton{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 4px;
+  font-size: 25px;
+  background-color: #270101;
+  color: white;
+}
+#playButton:hover,#fullscreenButton:hover{
+ transform: scale(1.1);
+background-color: #333;
+  
+}
+</style>
+<body>
+  <div class="video-container">
+    <video id="myVideo">
+      <source src="/image/Samsung Galaxy S24 Ultra Trailer Official Design(360P).mp4" type="video/mp4" >
+      Your browser does not support the video tag.
+    </video>
+    <div class="controls">
+      <button id="playButton">Play</button>
+      <input type="range" id="volumeRange" min="0" max="1" step="0.1" value="1">
+      <button id="fullscreenButton">Fullscreen</button>
+    </div>
+  </div>
+    
+      
+    <section>
+        <div class="products">
+            <h2>Featured Products</h2>
+
+            <div class="product">
+                <img src="image/infinax.jpg" alt="Product 1">
+                <h3>Infinix</h3>
+                <p>Infinix Smart 7 6.6inch 64GB/4GB Dual SIM Mobile– black Dual Sim </p>
+                <a href="#" class="btn">Buy Now</a>
+                <span class="price"
+                    style="padding-left: 5px; font-size: large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">$199</span>
+
+            </div>
+            <div class="product">
+                <img src="image/Samsung.jpg" alt="Product 2">
+
+                <h3>Samsung</h3>
+                <p>Samsung Galaxy A24 - 6.5-inch 128GB/8GB Dual Sim 4G Mobile Phone</p>
+                <a href="#" class="btn">Buy Now</a>
+                <span class="price"
+                    style="padding-left: 5px; font-size: large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">$150</span>
+
+            </div>
+            <div class="product">
+                <img src="image/re.jpg" alt="Product 3">
+                <h3>Realme</h3>
+                <p>Realme 10 – 6.4 Inch – 128GB/8GB RAM – Dual SIM 4G Mobile Phone
+                </p>
+                <a href="#" class="btn">Buy Now</a>
+                <span class="price"
+                    style="padding-left: 5px; font-size: large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">$300</span>
+
+            </div>
+            <div class="product">
+                <img src="image/re.jpg" alt="Product 3">
+                <h3>Realme</h3>
+                <p>Realme 10 – 6.4 Inch – 128GB/8GB RAM – Dual SIM 4G Mobile Phone
+                </p>
+                <a href="#" class="btn">Buy Now</a>
+                <span class="price"
+                    style="padding-left: 5px; font-size: large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">$300</span>
+
+            </div>
+
+            
+            </div>
+            <script>
+  const video = document.getElementById('myVideo');
+  const playButton = document.getElementById('playButton');
+  const volumeRange = document.getElementById('volumeRange');
+  const fullscreenButton = document.getElementById('fullscreenButton');
+
+playButton.addEventListener('click', function() {
+  if (video.paused) {
+    video.play();
+    playButton.textContent = 'Pause';
+  } else {
+    video.pause();
+    playButton.textContent = 'Play';
+  }
+});
+
+volumeRange.addEventListener('input', function() {
+  video.volume = volumeRange.value;
+});
+
+fullscreenButton.addEventListener('click', function() {
+  if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.mozRequestFullScreen) { 
+    video.mozRequestFullScreen();
+  }
+});
+      </script>
+        </div>
+    </section>
+   
+</body>
+
+</html>
